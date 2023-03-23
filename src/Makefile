@@ -4,7 +4,7 @@
 
 U= https://github.com/libharu/libharu/tarball/master
 
-CC= gcc
+CC= gcc -std=c99
 CFLAGS= -pedantic -Wall -Wextra -O2 $(PIC)
 MYCFLAGS= $(CFLAGS)
 L= libhpdf.a
