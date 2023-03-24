@@ -8,4 +8,4 @@ To build do
     make -C src get
     make
 
-See also these generic [instructions](https://web.tecgraf.puc-rio.br/~lhf/ftp/lua/install.html).
+See also these generic [instructions](https://web.tecgraf.puc-rio.br/~lhf/ftp/lua/install.html) for [my Lua libraries](https://web.tecgraf.puc-rio.br/~lhf/ftp/lua).
