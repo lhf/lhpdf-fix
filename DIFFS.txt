@@ -1,0 +1,12 @@
+diff orig/hpdf.c hpdf.c
+11a12,13
+> #include "fix.h"
+> 
+2934c2936
+<         int Dash;
+---
+>         HPDF_REAL Dash;
+2938c2940
+<         Dash = lua_tointeger(L, -1);
+---
+>         Dash = (HPDF_REAL) lua_tonumber(L, -1);

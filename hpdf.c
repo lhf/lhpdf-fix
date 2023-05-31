@@ -2933,11 +2933,11 @@ static int LclPage_SetDash(lua_State *L)
       mode.phase = luaL_checkinteger(L, 3);
       int J;
       for (J = 0; J < mode.num_ptn; J++) {
-        int Dash;
+        HPDF_REAL Dash;
         /* Stk: ... */
         lua_rawgeti(L, 2, J + 1);
         /* Stk: ... ptn[J] */
-        Dash = lua_tointeger(L, -1);
+        Dash = (HPDF_REAL) lua_tonumber(L, -1);
         mode.ptn[J] = Dash ? Dash : 1;
         lua_pop(L, 1);
         /* Stk: ... */

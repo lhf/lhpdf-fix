@@ -5,7 +5,6 @@ LUA_INCDIR= $(LUA_TOPDIR)/include
 LUA_BINDIR= $(LUA_TOPDIR)/bin
     LIBDIR= $(LUA_TOPDIR)/lib/lua/5.4
        LUA= $(LUA_BINDIR)/lua
-LUA_TOPDIR= /tmp/lua-5.4.4/install
 
 CC= gcc -std=c99
 CFLAGS= -Wall -Wextra -Wfatal-errors -O2
@@ -23,6 +22,7 @@ so:
 
 test:
 	$(LUA) test.lua
+	open test.pdf
 
 install:
 	cp $(MYMOD) $(LIBDIR)
