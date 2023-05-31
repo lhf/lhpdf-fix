@@ -4,6 +4,7 @@
 #endif
 
 #ifndef LIBHPDF_HAVE_LIBPNG
-#define HPDF_LoadPngImageFromFile(pdf,filename) (0)
-#define HPDF_LoadPngImageFromFile2(pdf,filename) (0)
+#define EMPTY 0; (void) pdf; (void) filename
+#define HPDF_LoadPngImageFromFile(pdf,filename) EMPTY
+#define HPDF_LoadPngImageFromFile2(pdf,filename) EMPTY
 #endif
