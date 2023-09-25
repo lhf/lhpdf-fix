@@ -25,9 +25,6 @@ get:
 	-rm -fr libharu-libharu-* master
 	cp -p ../hpdf_config.h .
 
-patch:
-	wget $D/hpdf_fontdef_jp.c
-	wget $D/hpdf_fontdef_kr.c
-
 clean:
 	-rm -f *.o *.a $T
+
