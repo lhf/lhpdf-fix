@@ -1,6 +1,6 @@
 This repository fixes [LuaHPDF](https://github.com/jung-kurt/luahpdf) to use Lua 5.3+ and [libHaru](http://libharu.org) to work with LuaHPDF when libpng is not available (the default in macOS). See also issue [266](https://github.com/libharu/libharu/issues/266) in libHaru.
 
-The fix is is tiny and is concentrated in fix.h, which is included in a slightly patched hpdf.c (see the DIFFS).
+The fix is tiny and is concentrated in fix.h, which is included in a slightly patched hpdf.c (see the DIFFS).
 
 To build do
 
@@ -11,4 +11,4 @@ This will also run test.lua and output test.pdf. Try also the [LuaHPDF demos](ht
 
 See also these generic [instructions](https://web.tecgraf.puc-rio.br/~lhf/ftp/lua/install.html) for [my Lua libraries](https://web.tecgraf.puc-rio.br/~lhf/ftp/lua).
 
-hpdf.c is subject to the [LuaHPDF License](https://github.com/jung-kurt/luahpdf/blob/master/doc/license.md).
+The code in hpdf.c is subject to the [LuaHPDF License](https://github.com/jung-kurt/luahpdf/blob/master/doc/license.md).
